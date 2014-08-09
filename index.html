@@ -11,11 +11,22 @@
 	<script>
 	(function () {
 
+		// This function will be invoked one of ten times.
 		setInterval(angular.throttle(function () {
 
-			console.log('Each second a lot of fun.');
+			console.log('Will be logged at 1 of 10 calls.');
 
 		}, 1000), 100);
+
+		// Declares a throttled function
+		// This function will be invoked by a minimum of 250 ms
+		var throttledResize = angular.throttle(function () {
+
+		    console.log('No browser drain at each event please.');
+
+		}, 250);
+
+		angular.element(window).on('resize', throttledResize);
 
 	}.apply(window));
 	</script>
