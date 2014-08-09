@@ -5,7 +5,7 @@
 ## Installation
 
 ```shell
-npm install && bower install && grunt build
+bower install angular-throttle
 ```
 
 ## Usage
