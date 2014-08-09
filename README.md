@@ -42,3 +42,7 @@ angular.throttle(fn, delay, {
 `options.trailing` When trailing is set to false the function will not be invoked the end of the operation. Default **true**
 
 The extension was inspired by UnderscoreJS so you are able to use the same options.
+
+## License
+
+Do what you want.
