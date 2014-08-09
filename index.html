@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>angular.throttle</title>
+	<meta charset="utf8">
+</head>
+<body>
+	<h1>angular.throttle</h1>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="src/angular.throttle.js"></script>
+	<script>
+	(function () {
+
+		setInterval(angular.throttle(function () {
+
+			console.log('Each second a lot of fun.');
+
+		}, 1000), 100);
+
+	}.apply(window));
+	</script>
+</body>
+</html>
