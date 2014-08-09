@@ -8,6 +8,10 @@
 bower install angular-throttle
 ```
 
+```html
+<script type="bower_components/angular-throttle/src/angular.throttle.js"></script>
+```
+
 ## Usage
 
 ```js
